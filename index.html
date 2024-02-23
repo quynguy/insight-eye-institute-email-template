@@ -9,7 +9,7 @@
     <style type="text/css">
         body {
             margin: 0;
-            background-color: #cccccc;
+            background-color: #ffffff;
         }
         table {
             border-spacing: 0;
@@ -17,8 +17,105 @@
         td {
             padding: 0;
         }
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #ffffff;
+        }
+       .main,
+       .header {
+        background-color: #ffffff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        font-family: sans-serif;
+       }
+       .institute {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+       }
+       .banner {
+        position: relative;
+       }
+       
+       .header img {
+        display: block;
+        position: absolute;
+        top: -100px;
+        right: 0;
+        width: 350px;
+       }
+       .banner-box {
+        text-align: center;
+        width: 280px;
+        position: relative;
+        background-color: #c8d5b9;
+        border-radius: 16px;
+        bottom: 40px;
+       }
+       .app-box h3 {
+        color:#243e36;
+        font-size: 25px;
+        line-height: 0%;
+       }
+       .app-box p{
+        color:#243e36;
+       }
+       .app-box span {
+        font-style: italic;
+        font-weight: bold;
+       }
+       button {
+        background-color: #9fc7aa;
+        color: #ffffff;
+        width: 110px;
+        border-radius: 16px;
+        margin-bottom: 15px;
+       }
+
     </style>
 </head>
 <body>
+    <center class="wrapper">
+        <!-- Top Border -->
+        <table class="main" width="100%">
+            <tr>
+                <td height="8px" style="background-color:#9fc7aa"></td>
+            </tr>
+
+            <tr>
+                <td height="20px" style="background-color: #ffffff">
+                <p class="institute">Insight Eye Institute</p>
+                </td>
+            </tr>
+        </table>
+        <!-- Header -->
+        <table class="header" width="100%">
+            <tr>
+                <td height="120px" style="background-color:#9fc7aa"></td>
+            </tr>
+            <tr>
+                <td class="banner" height="150px" style="background-color:#ffffff">
+                    <img src="images/banner.png"
+                    alt="banner"
+                    width="350px"
+                    height="auto">
+                </td>
+            </tr>
+        </table>
+        <!-- Banner Box -->
+        <table class="banner-box">
+            <tr>
+                <td class="app-box">
+                    <h3>Eye Wellness Center</h3>
+                    <p>Schedule your appointment <span>today</span>.</p>
+                    <a href="#"><button>Contact Us</button></a>
+                </td>
+            </tr>
+        </table>
+
+    </center>
 </body>
 </html>
